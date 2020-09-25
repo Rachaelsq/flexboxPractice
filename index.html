@@ -8,9 +8,9 @@
 <style>
 
 /* use the universal selector which is "*" to denote that you are writing rules for the whole document */
- { margin: 0; padding:}
+ { margin: 0; padding: 0}
 /*  */
-
+body {background-color: rgb(0, 2, 128);}
 
 
 
@@ -19,21 +19,24 @@
                 /* The header is the parent flex container */
                 #logo {width: 100px; height: 50px; background: cornflowerblue;} 
                 nav { background: rgba(0,0,0,.25); }
-                nav ul li { display: inline; } 
+                nav ul li { display: inline; color: white; padding: 15px; margin-right: 50px;} 
 
                 #hero {background: rgba(0,0,0,.25); display: flex; justify-content: center; }
-                .heroGraphic { background: yellowgreen; width: 500px; height: 500px; }
-                .heroHeading { background:purple; }
-                .heroButton { background: firebrick; }
+                .heroGraphic { background: yellowgreen; width: 500px; height: 500px;}
+                .heroHeading { margin: 0 0 10px 10px; color: white;}
+                .heroButton { background: firebrick; width: 50%; text-align: center; border-radius: 10px; margin: 0 auto; padding-top: 5px; padding-bottom: 5px;}
 
-
+            
 
 
 
 
                 
-                #articles { background:purple; }
-                footer {background: rgba(0,0,255,.25); }
+                #articles { background:purple; display: flex; justify-content: center; margin-top: 50px;}
+
+                    .articlecontainer { background: rgba(0,0,0,.25); width: 300px; margin: 0 25px; }
+
+                    footer { background: rgba(0,0,0,.25); height: 50px; text-align: center; }
 
 /* End of css rules */
 
@@ -49,9 +52,9 @@
 
                 <nav>
                     <ul>
-            <li><a href="#"></a> Home</li>
-            <li><a href="#"></a> About</li>
-            <li><a href="#"></a> Contact</li>
+                            <li><a href="#"></a> Home</li>
+                            <li><a href="#"></a> About</li>
+                            <li><a href="#"></a> Contact</li>
                     </ul>
                 </nav>
      
@@ -61,10 +64,14 @@
 
 
             <section id="hero">
-                <div class="heroGraphic">hero graphic </div>
+                <div class="heroGraphic"><img src="https://via.placeholder.com/500x500" alt="">
+                
+                </div>
+
+<div>
                     <div class="heroHeading"><h1>This is a heading!</h1></div>
                     <div class="heroButton">hero button</div>
-
+</div>
 
 
             </section>
@@ -72,11 +79,36 @@
 
 
 
-            <section id="articles">Here are some articles</section>
+            <section id="articles">
+                <div class="articlecontainer">
+                    <img src="https://via.placeholder.com/300x200">
+                    <h2>Article title</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
+                 </div>
+                 <div class="articlecontainer">
+                       <img src="https://via.placeholder.com/300x200">
+                       <h2>Article title</h2>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
+                 </div>
+                 <div class="articlecontainer">
+                       <img src="https://via.placeholder.com/300x200">
+                       <h2>Article title</h2>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
+                 </div>
+
+            </section>
+           
 
 
-
-            <footer>This is the footer of the page!</footer>
+            <footer>
+                <nav>
+                <ul>
+                <li><a href="#"></a> Home</li>
+                <li><a href="#"></a> About</li>
+                <li><a href="#"></a> Contact</li>
+</ul>
+</nav>
+            </footer>
 
 
 </header>
